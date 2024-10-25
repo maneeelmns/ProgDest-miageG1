@@ -17,13 +17,12 @@ public class CarRental {
         cars.add(new Car("11AA22", 1000));
         cars.add(new Car("33CCDD", 3000));
         cars.add(new Car("22BB33", 2000));
-        cars.add(new Car("22BB34", 2500));
     }
 
     @GetMapping("/cars")
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
-    public List<Car> listOfCars() {
+    public List<Car> listOfCars(){
         return cars;
     }
 
@@ -31,21 +30,21 @@ public class CarRental {
     @ResponseStatus(HttpStatus.OK)
     public void rentOrGetBack(
             @PathVariable("plateNumber") String plateNumber,
-            @RequestParam(value = "rent", required = true) boolean rent) throws Exception {
-        System.out.println(plateNumber);
-        System.out.println(rent);
-        Iterator<Car> carIterator = cars.iterator();
-        Car carFounded = null;
-        while (carIterator.hasNext() && (carFounded = carIterator.next()).getPlateNumber().equals(plateNumber) == false) {
-        }
-        if (carFounded != null) {      // voiture trouvée
-            if (rent == true) {
-                carFounded.setRented(true);
-            } else {
-                carFounded.setRented(false);
+            @RequestParam(value="rent", required = true)boolean rent) throws Exception{
+            System.out.println(plateNumber);
+            System.out.println(rent);
+            Iterator<Car> carIterator = cars.iterator();
+            Car carFounded = null;
+            while(carIterator.hasNext() && (carFounded=carIterator.next()).getPlateNumber().equals(plateNumber)==false){
             }
-        } else {
-            throw new Exception("Car does not exist");
-        }
+            if(carFounded != null){      // voiture trouvée
+                if(rent == true){
+                    carFounded.setRented(true);
+                } else {
+                    carFounded.setRented(false);
+                }
+            } else {
+                throw new Exception("Car does not exist");
+            }
     }
 }

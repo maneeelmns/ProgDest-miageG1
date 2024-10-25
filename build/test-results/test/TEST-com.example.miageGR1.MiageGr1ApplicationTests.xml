@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.miageGR1.MiageGr1ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-10-25T12:38:38" hostname="manel-ThinkPad-X240" time="1.179">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.miageGR1.MiageGr1ApplicationTests" time="1.179"/>
+  <system-out><![CDATA[14:38:35.006 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.miageGR1.MiageGr1ApplicationTests]: MiageGr1ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+14:38:35.153 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.miageGR1.MiageGr1Application for test class com.example.miageGR1.MiageGr1ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2024-10-25T14:38:35.839+02:00  INFO 128712 --- [miageGR1] [    Test worker] c.e.miageGR1.MiageGr1ApplicationTests    : Starting MiageGr1ApplicationTests using Java 17.0.12 with PID 128712 (started by manel in /home/manel/Bureau/ProgDest-miageG1/miageGR1-main)
+2024-10-25T14:38:35.842+02:00  INFO 128712 --- [miageGR1] [    Test worker] c.e.miageGR1.MiageGr1ApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-10-25T14:38:38.173+02:00  INFO 128712 --- [miageGR1] [    Test worker] c.e.miageGR1.MiageGr1ApplicationTests    : Started MiageGr1ApplicationTests in 2.78 seconds (process running for 6.291)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
